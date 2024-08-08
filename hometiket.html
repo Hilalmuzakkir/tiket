@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pembelian Tiket Konser</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="w3-bar w3-black">
+      <a href="#" class="w3-bar-item w3-button"><i class="fas fa-home"></i> Beranda</a>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button"><i class="fas fa-music"></i> Konser</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#" class="w3-bar-item w3-button">Jadwal Konser</a>
+          <a href="#" class="w3-bar-item w3-button">Artis</a>
+          <a href="#" class="w3-bar-item w3-button">Venue</a>
+        </div>
+      </div>
+      <a href="#" class="w3-bar-item w3-button"><i class="fas fa-ticket-alt"></i> Beli Tiket</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fas fa-user"></i> Akun Saya</a>
+    </div>
+
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+      <div class="w3-display-middle">
+        <h1 class="w3-jumbo w3-animate-top">Konser Impian Anda</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:50%">
+        <p class="w3-large w3-center">Beli tiket untuk pertunjukan terbaik!</p>
+      </div>
+    </div>
+
+    <div class="w3-container w3-center w3-padding-64">
+        <h2 style="color: rgb(0, 206, 69);">Konser Mendatang</h2>
+        <p>Jangan lewatkan pertunjukan luar biasa ini!</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-row-padding" style="margin-top:64px">
+                <div class="w3-third">
+                    <div class="w3-card w3-hover-shadow" style="border-radius: 16px; overflow: hidden;" onmouseover="this.style.transform='scale(1.05)'; this.style.transition='transform 0.3s';" onmouseout="this.style.transform='scale(1)';">
+                        <img src="" alt="Konser 1" style="width:20%; border-top-left-radius: 16px; border-top-right-radius: 16px;">
+                        <div class="w3-container">
+                            <h3>Taylor Swift: The Eras Tour</h3>
+                            <p>20 Juli 2023 | Jakarta</p>
+                            <button class="w3-button w3-green">Beli Tiket</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card w3-hover-shadow" onmouseover="this.style.transform='scale(1.05)'; this.style.transition='transform 0.3s';" onmouseout="this.style.transform='scale(1)';">
+                        <img src="image/concert2.jpg" alt="Konser 2" style="width:100%;">
+                        <div class="w3-container">
+                            <h3>Festival Musik Pop</h3>
+                            <p>5 Agustus 2023 | Bali</p>
+                            <button class="w3-button w3-black">Beli Tiket</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card w3-hover-shadow" onmouseover="this.style.transform='scale(1.05)'; this.style.transition='transform 0.3s';" onmouseout="this.style.transform='scale(1)';">
+                        <img src="image/concert3.jpg" alt="Konser 3" style="width:100%;">
+                        <div class="w3-container">
+                            <h3>Konser Musik Klasik</h3>
+                            <p>15 September 2023 | Yogyakarta</p>
+                            <button class="w3-button w3-black">Beli Tiket</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <style>
+        .latar-belakang {
+            background-image: url('img/brunomars.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+            overflow-y: auto;
+        }
+        .lapisan {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .kontainer-teks {
+            position: relative;
+            z-index: 1;
+            padding-top: 150px;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <div class="latar-belakang">
+        <div class="lapisan"></div>
+        <div class="kontainer-teks w3-center">
+            <h2 class="w3-xxlarge">Rasakan Keajaiban Musik Dari Bruno Mars</h2>
+            <p class="w3-large">Bergabunglah dengan kami untuk pengalaman konser yang tak terlupakan</p>
+        <button class="w3-button w3-transparent w3-animate-bottom" style="animation: fadeInUp 1s ease-out; border: 2px solid rgb(255, 255, 255); color: rgb(255, 255, 255);">
+            Pesan Sekarang
+        </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

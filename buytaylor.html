@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Eras Tour - Taylor Swift</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head
+<body>
+    <div class="w3-bar w3-black w3-opacity-min">
+        <a href="#home" class="w3-bar-item w3-button"><i class="fas fa-home"></i> Beranda</a>
+        <a href="#about" class="w3-bar-item w3-button"><i class="fas fa-info-circle"></i> Tentang</a>
+        <a href="#setlist" class="w3-bar-item w3-button"><i class="fas fa-music"></i> Daftar Album</a>
+        <a href="#tickets" class="w3-bar-item w3-button"><i class="fas fa-ticket-alt"></i> Tiket</a>
+    </div>
+
+    <div id="tickets" class="w3-container w3-padding-64 section" style="background-color: #f9f9f9;">
+        <h2 class="w3-center w3-text-red" style="font-size: 2.5em; font-weight: bold;">Pemesanan Tiket Konser</h2>
+        
+        <div class="w3-row-padding w3-center" style="margin-top: 32px;">
+            <div class="w3-half">
+                <div class="w3-card-4 w3-round-large venue-card" style="padding: 20px; background: linear-gradient(45deg, #ff9a9e, #fad0c4); transition: all 0.3s ease;">
+                    <h3 class="w3-text-deep-purple">Informasi Venue</h3>
+                    <img src="img/venue.jpg" alt="Gelora Bung Karno Stadium" style="width:100%; max-width:400px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    <p class="w3-text-indigo"><strong>Lokasi:</strong> Gelora Bung Karno Stadium, Jakarta</p>
+                    <p class="w3-text-indigo"><strong>Kapasitas:</strong> 80.000 penonton</p>
+                    <p class="w3-text-indigo"><strong>Fasilitas:</strong> Area parkir luas, food court, merchandise booth</p>
+                    <div class="w3-container w3-center">
+                        <span class="w3-tag w3-round w3-blue w3-animate-zoom">Parkir Luas</span>
+                        <span class="w3-tag w3-round w3-green w3-animate-zoom" style="animation-delay: 0.2s;">Food Court</span>
+                        <span class="w3-tag w3-round w3-red w3-animate-zoom" style="animation-delay: 0.4s;">Merchandise</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w3-half">
+                <div class="w3-card-4 w3-white w3-round-large" style="padding: 20px;">
+                    <h3>Informasi Tiket</h3>
+                    <p><strong>Tanggal Konser:</strong> 20 Juli 2023</p>
+                    <p><strong>Waktu:</strong> 19:00 WIB</p>
+                    <p><strong>Kategori Tiket:</strong></p>
+                    <ul class="w3-ul">
+                        <li>VIP: Rp 3.500.000</li>
+                        <li>Festival: Rp 2.500.000</li>
+                        <li>Tribune: Rp 1.500.000</li>
+                    </ul>
+                    <p><strong>Penjualan Tiket Dibuka:</strong> 1 Juni 2023, 10:00 WIB</p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-container w3-center" style="margin-top: 32px;">
+            <h3 class="w3-text-red">Pesan Tiket Sekarang</h3>
+            <form style="max-width: 500px; margin: auto; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: #f9f9f9;">
+                <p>
+                    <label for="nama" class="w3-text">Nama Lengkap</label>
+                    <input class="w3-input w3-border w3-round" type="text" id="nama" required>
+                </p>
+                <p>
+                    <label for="email" class="w3-text">Email</label>
+                    <input class="w3-input w3-border w3-round" type="email" id="email" required>
+                </p>
+                <p>
+                    <label for="kategori" class="w3-text">Kategori Tiket</label>
+                    <select class="w3-select w3-border w3-round" id="kategori" required>
+                        <option value="" disabled selected>Pilih kategori tiket</option>
+                        <option value="vip">VIP</option>
+                        <option value="festival">Festival</option>
+                        <option value="tribune">Tribune</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="jumlah" class="w3-text">Jumlah Tiket</label>
+                    <input class="w3-input w3-border w3-round" type="number" id="jumlah" min="1" max="4" required>
+                </p>
+                <button class="w3-button w3-block w3-red w3-round w3-margin-top" type="submit">Pesan Tiket</button>
+            </form>
+        </div>
+        <div class="w3-container w3-center" style="margin-top: 32px;">
+            <h3 class="w3-text-red">Catatan Penting</h3>
+            <ul class="w3-ul w3-card-4 w3-round-large" style="max-width: 600px; margin: auto; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: #f9f9f9;">
+                <li>Satu akun hanya dapat membeli maksimal 4 tiket.</li>
+                <li>Pembayaran harus dilakukan dalam waktu 2 jam setelah pemesanan.</li>
+                <li>Tiket tidak dapat direfund atau ditukar.</li>
+                <li>Harap membawa identitas diri saat menukarkan tiket di venue.</li>
+            </ul>
+        </div>
